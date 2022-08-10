@@ -1,0 +1,105 @@
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.calculator {
+    outline: solid 2px black;
+    border-radius: 2vh;
+    height: 59vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    margin-top: 10vh;
+}
+
+.calc-label {
+    margin-top: 0.5vh;
+    font-family: 'Lobster', sans-serif;
+    font-size: 5vh;
+    width: 35vh;
+    text-align: left;
+}
+
+.display {
+    outline: solid 3px black;
+    border-radius: 1vh;
+    height: 7vh;
+    width: 35vh;
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgba(127, 255, 212, 0.4);
+}
+
+.display-readout {
+    margin-top: 0.4vh;
+    margin-right: 0.25vh;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 3.25vh;
+}
+
+.keypad {
+    outline: solid 3px black;
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 35vh;
+    border-radius: 2vh;
+    background-color: grey;
+}
+
+.key {
+    outline: solid 2px gray;
+    height: 7vh;
+    width: 7vh;
+    margin: 0.5vh 0.5vh;
+    border-radius: 0.5vh;
+    font-size: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+}
+
+.key:hover{
+    outline: solid 3px black;
+}
+
+.key:active {
+    transform: scale(1.05);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row > .key:nth-of-type(4), .row:nth-of-type(5) > .key:nth-of-type(4) {
+    background-color: rosybrown;
+}
+
+.row:nth-of-type(4) > .key:nth-of-type(3) {
+    background-color: royalblue;
+}
+
+.row:nth-of-type(5) > .key{
+    background-color:crimson
+}
+
+.row:nth-of-type(5) > .key:nth-of-type(2), .row:nth-of-type(5) > .key:nth-of-type(3) {
+    font-size: 4vh;
+}
