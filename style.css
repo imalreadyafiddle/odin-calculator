@@ -1,3 +1,5 @@
+/* native selectors */
+
 html {
     font-family: sans-serif;
     margin: 0;
@@ -9,15 +11,22 @@ html {
     background-color: black;
 }
 
+footer {
+    color: white;
+    margin-top: 5vh;
+}
+
+
+/* classes selectors */
+
 .calculator {
-    outline: solid 2px black;
     border-radius: 2vh;
     height: 59vh;
     width: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background: radial-gradient(circle at center, #bbb 0%, #bbb 80%, #333 100%);
     margin-top: 10vh;
 }
 
@@ -27,6 +36,11 @@ html {
     font-size: 5vh;
     width: 35vh;
     text-align: left;
+    color:rgb(170, 0, 0)
+}
+
+.keypad > div:nth-child(5) > button.key.clear.delete {
+    font-size: 3.5vh;
 }
 
 .display {
@@ -81,6 +95,10 @@ html {
     transform: scale(1.05);
 }
 
+.plus-minus {
+    font-size: 3.5vh;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -96,10 +114,10 @@ html {
     background-color: royalblue;
 }
 
-.row:nth-of-type(5) > .key{
-    background-color:crimson
+.row:nth-of-type(5) > .key {
+    background-color: crimson;
 }
 
-.row:nth-of-type(5) > .key:nth-of-type(2), .row:nth-of-type(5) > .key:nth-of-type(3) {
+.row:nth-of-type(5) > .key:nth-of-type(1), .row:nth-of-type(5) > .key:nth-of-type(2), .row:nth-of-type(5) > .key:nth-of-type(3) {
     font-size: 4vh;
 }
