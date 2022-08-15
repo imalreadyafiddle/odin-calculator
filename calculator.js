@@ -80,8 +80,8 @@ function inputEquals () {
         //handles final result
         secondNumber = displayValue;
         result = operate(Number(firstNumber), Number(secondNumber), secondOperator);
-        if(result === 'lmaoverflow') {
-            displayValue = 'lmaoverflow';
+        if(result === 'wat') {
+            displayValue = 'wat';
         } else {
             displayValue = roundAccurately(result, 5).toString();
             firstNumber = displayValue;
@@ -94,8 +94,8 @@ function inputEquals () {
         //handles first operation
         secondNumber = displayValue;
         result = operate(Number(firstNumber), Number(secondNumber), firstOperator);
-        if(result === 'lmao') {
-            displayValue = 'lmao';
+        if(result === 'wat') {
+            displayValue = 'wat';
         } else {
             displayValue = roundAccurately(result, 5).toString();
             firstNumber = displayValue;
@@ -164,7 +164,7 @@ function operate(num1, num2, operator) {
     } else if (operator == "×") {
         return num1 * num2;
     } else if (operator == "÷") {
-        if (num2 == "0") {
+        if (num2 === 0) {
             return "wat"
         } else {
             return num1 / num2;
@@ -179,7 +179,7 @@ function roundAccurately(num, places) {
 function updateDisplay () {
     let display = document.querySelector('.display-readout');
     if (display.innerText.length > 10) {
-        displayValue = "lmaoverflow"
+        displayValue = "wat"
     } if (displayValue == "") {
         displayValue = "0"
     }
