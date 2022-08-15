@@ -190,4 +190,9 @@ function updateDisplay () {
 addEventListener('DOMContentLoaded', activateComponents);
 
 // intialize the displayValue and num1/num2 variables globally
-let displayValue = "", firstNumber, secondNumber, firstOperator, secondOperator, result;
+let displayValue = "", 
+firstNumber = null,
+secondNumber = null,
+firstOperator = null,
+secondOperator =  null,
+result = null;
