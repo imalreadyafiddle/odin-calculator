@@ -17,7 +17,7 @@ footer {
 }
 
 
-/* classes selectors */
+/* class selectors */
 
 .calculator {
     border-radius: 2vh;
@@ -36,10 +36,10 @@ footer {
     font-size: 5vh;
     width: 35vh;
     text-align: left;
-    color:rgb(170, 0, 0)
+    color:rgb(200, 0, 0)
 }
 
-.keypad > div:nth-child(5) > button.key.clear.delete {
+.clear.delete {
     font-size: 3.5vh;
 }
 
@@ -92,10 +92,10 @@ footer {
 }
 
 .key:active {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
-.plus-minus {
+.sign {
     font-size: 3.5vh;
 }
 
@@ -106,18 +106,18 @@ footer {
     align-items: center;
 }
 
-.row > .key:nth-of-type(4), .row:nth-of-type(5) > .key:nth-of-type(4) {
+.sign, .operator {
     background-color: rosybrown;
 }
 
-.row:nth-of-type(4) > .key:nth-of-type(3) {
+.equals {
     background-color: royalblue;
 }
 
-.row:nth-of-type(5) > .key {
-    background-color: crimson;
+.clear {
+    background-color: rgb(200, 0, 0);
 }
 
-.row:nth-of-type(5) > .key:nth-of-type(1), .row:nth-of-type(5) > .key:nth-of-type(2), .row:nth-of-type(5) > .key:nth-of-type(3) {
+.clear-all, .clear-entry {
     font-size: 4vh;
 }
