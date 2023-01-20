@@ -178,7 +178,7 @@ function roundAccurately(num, places) {
 
 function updateDisplay () {
     let display = document.querySelector('.display-readout');
-    if (display.innerText.length > 10) {
+    if (display.innerText.length >= 10) {
         displayValue = "wat"
     } if (displayValue == "") {
         displayValue = "0"
